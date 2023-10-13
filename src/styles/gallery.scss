@@ -1,0 +1,31 @@
+@import "colors";
+.gallery-layout{
+  background-color: $bgColors;
+  height: auto;
+  border-radius: 15px;
+
+  .gallery-container{
+    position: relative;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    article{
+      position: relative;
+      color: white;
+      font-weight: 500;
+      font-size:18px;
+      img{
+        width: 340px;
+        height: 340px;
+      }
+      .location{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 25px;
+      }
+    }
+  }
+}

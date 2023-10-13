@@ -1,0 +1,30 @@
+.gallery-layout {
+  background-color: #F6F6F6;
+  height: auto;
+  border-radius: 15px;
+}
+.gallery-layout .gallery-container {
+  position: relative;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.gallery-layout .gallery-container article {
+  position: relative;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+}
+.gallery-layout .gallery-container article img {
+  width: 340px;
+  height: 340px;
+}
+.gallery-layout .gallery-container article .location {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 25px;
+}
+
+/*# sourceMappingURL=gallery.css.map */

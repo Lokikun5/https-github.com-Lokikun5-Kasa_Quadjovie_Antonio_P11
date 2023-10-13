@@ -1,0 +1,24 @@
+@import "colors";
+header{
+  display: flex;
+  justify-content: space-between;
+  img{
+    width: 210.32px;
+    height: 68px
+  }
+  ul{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    a{
+      text-decoration: none;
+      color: $mainColors;
+      font-size: 24px;
+      font-weight: 500;
+      &:hover{
+        color: black;
+      }
+    }
+  }
+
+}
