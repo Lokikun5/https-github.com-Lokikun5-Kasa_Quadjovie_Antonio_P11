@@ -2,6 +2,9 @@ header {
   display: flex;
   justify-content: space-between;
 }
+header .active {
+  border-bottom: solid 3px #FF6060;
+}
 header img {
   width: 210.32px;
   height: 68px;

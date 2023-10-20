@@ -8,7 +8,8 @@
   padding: 30px;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 60px;
+  justify-content: center;
 }
 .gallery-layout .gallery-container article {
   position: relative;
@@ -19,6 +20,8 @@
 .gallery-layout .gallery-container article img {
   width: 340px;
   height: 340px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 .gallery-layout .gallery-container article .location {
   position: absolute;

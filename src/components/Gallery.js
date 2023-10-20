@@ -1,17 +1,15 @@
 import '../styles/gallery.scss'
-import imgTest from '../assets/ImgGal.png'
+import data from '../data/logements.json'
 function Gallery (){
-    const location = 'Titre de la location'
+
     return<div className='gallery-layout'>
         <div className="gallery-container">
-            <article>
-                <img src={imgTest} alt='maison'/>
-                <span className="location">{location}</span>
-            </article>
-            <article>
-                <img src={imgTest} alt='maison'/>
-                <span className="location">{location}</span>
-            </article>
+            {data.map((item) => (
+                <article key={item.id}>
+                    <img src={item.cover} alt={item.title} />
+                    <span className="location">{item.title}</span>
+                </article>
+            ))}
         </div>
     </div>
 }

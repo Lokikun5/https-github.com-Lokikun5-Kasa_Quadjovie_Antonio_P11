@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  height: 500px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  color: #FF6060;
+}
+.container img {
+  width: 597px;
+  height: 263px;
+}
+.container p {
+  font-size: 36px;
+  font-weight: 500;
+}
+.container a {
+  text-decoration: none;
+  color: #FF6060;
+  border-bottom: solid 1px #FF6060;
+}
+
+/*# sourceMappingURL=notFound.css.map */

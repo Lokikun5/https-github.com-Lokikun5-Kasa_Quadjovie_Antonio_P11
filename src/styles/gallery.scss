@@ -9,7 +9,8 @@
     padding: 30px;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 60px;
+    justify-content: center;
 
     article{
       position: relative;
@@ -19,6 +20,8 @@
       img{
         width: 340px;
         height: 340px;
+        object-fit: cover;
+        border-radius: 10px;
       }
       .location{
         position: absolute;

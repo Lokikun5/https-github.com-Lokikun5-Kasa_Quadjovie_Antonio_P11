@@ -1,9 +1,8 @@
 
 import '../styles/banner.scss';
-function Banner () {
-const title = 'Chez vous, partout et ailleurs';
+function Banner ({titleH1}) {
     return (<section className='banner-layout'>
-            <h1>{title}</h1>
+            <h1>{titleH1}</h1>
     </section>
         )
 }

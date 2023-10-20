@@ -1,15 +1,16 @@
 import '../styles/header.scss'
 import logo from '../assets/LOGO.svg'
+import {NavLink} from "react-router-dom";
 function Header () {
     return (<header>
         <img src={logo} alt='logo Kasa' />
         <nav>
             <ul>
                 <li>
-                    <a href="/home">Accueil</a>
+                    <NavLink to="/">Accueil</NavLink>
                 </li>
                 <li>
-                    <a href="/about">A Propos</a>
+                    <NavLink to="/about">A Propos</NavLink>
                 </li>
             </ul>
         </nav>
