@@ -5,7 +5,8 @@ import Banner from './Banner';
 import Gallery from './Gallery';
 import Footer from "./Footer";
 import About from "../pages/About";
-import NotFound from "../pages/Not-found"
+import NotFound from "../pages/Not-found";
+import LocationTemplate from "../pages/Location-template";
 const router = createBrowserRouter([
   {
     path: '/',
@@ -24,6 +25,14 @@ const router = createBrowserRouter([
   {
     path: 'not-found',
     element: <div><div className="main"><Header /><NotFound/></div><Footer/></div>
+  },
+  {
+    path: 'location',
+    element: <div><div className="main"><Header /><LocationTemplate/></div><Footer/></div>
+  },
+  {
+    path: 'location/:id',
+    element: <div><div className="main"><Header /><LocationTemplate/></div><Footer/></div>
   }
 ])
 function App() {
