@@ -23,6 +23,9 @@
   object-fit: cover;
   border-radius: 10px;
 }
+.gallery-layout .gallery-container article img:hover ~ .location {
+  color: #FF6060;
+}
 .gallery-layout .gallery-container article .location {
   color: white;
   position: absolute;

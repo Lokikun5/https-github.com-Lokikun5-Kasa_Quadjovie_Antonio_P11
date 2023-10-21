@@ -22,6 +22,12 @@
         height: 340px;
         object-fit: cover;
         border-radius: 10px;
+        &:hover {
+          ~ .location {
+            color: $mainColors;
+
+          }
+        }
       }
       .location{
         color: white;

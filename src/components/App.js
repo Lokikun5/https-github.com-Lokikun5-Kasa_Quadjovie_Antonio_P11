@@ -14,7 +14,9 @@ const router = createBrowserRouter([
       <div className="main"><Header />
         <Banner titleH1={"Chez vous, partout et ailleurs"}/>
         <Gallery /></div>
-      <Footer/></div>
+      <Footer/></div>,
+
+    errorElement: <NotFound/>
   },
   {
     path: 'about',
