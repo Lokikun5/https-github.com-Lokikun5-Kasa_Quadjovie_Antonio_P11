@@ -5,6 +5,7 @@ import Slider from '../components/Slider';
 import Dropdown from "../components/Dropdown";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Rating from "../components/Rating";
 function LocationTemplate () {
     const {id} = useParams();
     const locationData = data.find(item => item.id === id);
@@ -13,7 +14,7 @@ function LocationTemplate () {
     const equipments = locationData.equipments;
     const tags = locationData.tags;
     const imgs = locationData.cover;
-
+    const locationRating = locationData.rating;
     return <div>
                 <div className="main">
                     <Header />
@@ -26,7 +27,7 @@ function LocationTemplate () {
                                     </div>
                                     <div className="user">
                                         <div className="user-info"><p>{hostName}</p> <img src={hostPicture} alt={hostName} /></div>
-                                        <div>{locationData.rating}</div>
+                                        <Rating rat={locationRating} />
                                     </div>
                                 </div>
 

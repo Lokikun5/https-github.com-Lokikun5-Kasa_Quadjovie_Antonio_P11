@@ -56,9 +56,9 @@
 .arrow-icon {
   width: 32px;
   height: 32px;
-  transition: transform 0.3s ease-in-out; // Ajoutez une transition pour la rotation
+  transition: transform 0.3s ease-in-out;
 }
 
 .rotate {
-  transform: rotate(180deg); // Appliquez la rotation de 180 degrés lorsque le Dropdown est ouvert
+  transform: rotate(180deg);
 }
