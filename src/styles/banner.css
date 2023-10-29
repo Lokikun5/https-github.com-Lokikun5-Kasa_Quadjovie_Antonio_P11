@@ -1,16 +1,17 @@
 .banner-layout {
-  background-image: url("../assets/Mask Group.png");
-  background-repeat: no-repeat;
-  background-size: cover;
   margin-top: 50px;
-  margin-bottom: 20px;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 223px;
+  margin-bottom: 50px;
+  position: relative;
+}
+.banner-layout img {
+  width: 100%;
+  display: block;
 }
 .banner-layout h1 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
   font-weight: 500;
   font-size: 48px;
