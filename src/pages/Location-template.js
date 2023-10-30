@@ -13,13 +13,13 @@ function LocationTemplate () {
     const hostPicture = locationData.host.picture;
     const equipments = locationData.equipments;
     const tags = locationData.tags;
-    const imgs = locationData.cover;
+    const imgs = locationData.pictures;
     const locationRating = locationData.rating;
     return <div>
                 <div className="main">
                     <Header />
                         <div className="location-page">
-                            <Slider src={imgs} alt={locationData.title}/>
+                            <Slider pictures={imgs} alt={locationData.title}/>
                                 <div className="location-display">
                                     <div className="location-info">
                                         <h1>{locationData.title}</h1>
