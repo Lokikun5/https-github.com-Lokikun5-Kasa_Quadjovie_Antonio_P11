@@ -22,7 +22,8 @@ const router = createBrowserRouter([
   },
   {
     path: 'location',
-    element: <LocationTemplate/>
+    element: <LocationTemplate/>,
+    errorElement: <NotFound/>
   },
   {
     path: 'location/:id',
