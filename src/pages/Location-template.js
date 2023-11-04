@@ -20,23 +20,27 @@ function LocationTemplate () {
                     <Header />
                         <div className="location-page">
                             <Slider pictures={imgs} alt={locationData.title}/>
+                            <div className="location-container">
                                 <div className="location-display">
-                                    <div className="location-info">
-                                        <h1>{locationData.title}</h1>
-                                        <p>{locationData.location}</p>
+                                    <div className="bloc1">
+                                        <div className="location-info">
+                                            <h1>{locationData.title}</h1>
+                                            <p>{locationData.location}</p>
+                                        </div>
+                                        <div className="tags">
+                                            {tags.map((tag,index) => (
+                                                <li key={index}>{tag}</li>
+                                            ))
+                                            }
+                                        </div>
                                     </div>
+
                                     <div className="user">
                                         <div className="user-info"><p>{hostName}</p> <img src={hostPicture} alt={hostName} /></div>
                                         <Rating rat={locationRating} />
                                     </div>
                                 </div>
-
-                                <div className="tags">
-                                    {tags.map((tag,index) => (
-                                        <li key={index}>{tag}</li>
-                                        ))
-                                    }
-                                </div>
+                            </div>
                                 <div className="dropdown-section">
                                     <div className="dropdown-wrapper">
                                         <Dropdown title={'Description'} content={locationData.description}/>

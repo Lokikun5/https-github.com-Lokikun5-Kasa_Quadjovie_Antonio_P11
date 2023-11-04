@@ -9,6 +9,12 @@ header img {
   width: 210.32px;
   height: 68px;
 }
+@media (max-width: 1000px) {
+  header img {
+    width: 145px;
+    height: 46.88px;
+  }
+}
 header ul {
   list-style: none;
   display: flex;
@@ -22,6 +28,16 @@ header ul a {
 }
 header ul a:hover {
   color: black;
+}
+@media (max-width: 1000px) {
+  header ul a {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1000px) {
+  header ul {
+    gap: 26px;
+  }
 }
 
 /*# sourceMappingURL=header.css.map */

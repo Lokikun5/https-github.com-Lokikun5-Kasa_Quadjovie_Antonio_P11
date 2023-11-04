@@ -1,5 +1,15 @@
 .main {
-  padding: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+@media (max-width: 1000px) {
+  .main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */

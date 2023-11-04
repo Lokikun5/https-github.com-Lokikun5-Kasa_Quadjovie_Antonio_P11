@@ -4,8 +4,8 @@
   position: relative;
 
   .arrow {
-    height: 30px;
-    width: 30px;
+    height: 119.64px;
+    width: 96px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -14,11 +14,18 @@
 
     &.next {
       right: 10px;
-      left: 96%;
+      left: 91%;
     }
+
 
     &.prev {
       left: 10px;
+    }
+  }
+  @media(max-width: 1000px){
+    .arrow{
+      width: 24px;
+      height: 24px;
     }
   }
 

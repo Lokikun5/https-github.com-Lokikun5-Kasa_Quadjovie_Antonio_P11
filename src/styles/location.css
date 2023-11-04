@@ -30,7 +30,24 @@ h1 {
   width: 64px;
   height: 64px;
 }
+@media (max-width: 1000px) {
+  .location-display .user {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .location-display .user .user-info {
+    width: 49%;
+  }
+}
 
+@media (max-width: 1000px) {
+  .location-display {
+    flex-direction: column;
+  }
+}
 .tags {
   list-style: none;
   display: flex;
@@ -56,10 +73,16 @@ h1 {
 .dropdown-section {
   margin-top: 50px;
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
   width: 100%;
 }
 
+@media (max-width: 1000px) {
+  .dropdown-section {
+    flex-direction: column;
+    gap: 0px;
+  }
+}
 .dropdown-wrapper {
   width: 100%;
   display: inline-block;
