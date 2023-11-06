@@ -27,9 +27,9 @@ function About () {
     return <div><div className="main">
         <Header />
         <Banner src={bannerAbout}/>
-        <div className="dropdown-container">
+        <div>
             {info.map((item, index) => (
-                <Dropdown key={index} title={item.title} content={item.text} />
+                <Dropdown key={index} title={item.title} content={item.text} className="about-dropdown"/>
                 ))}
         </div>
         </div>
