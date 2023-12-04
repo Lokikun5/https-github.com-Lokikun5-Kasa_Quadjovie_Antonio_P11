@@ -1,5 +1,4 @@
 import '../styles/about.scss'
-import arrow from '../assets/arrow_back_ios-24px.svg';
 import bannerAbout from '../assets/Mask GroupAb.png';
 import Header from "../components/Header";
 import Banner from "../components/Banner";
