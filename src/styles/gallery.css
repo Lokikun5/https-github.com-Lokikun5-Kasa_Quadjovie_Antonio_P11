@@ -23,8 +23,8 @@
   object-fit: cover;
   border-radius: 10px;
 }
-.gallery-layout .gallery-container article img:hover ~ .location {
-  color: #FF6060;
+.gallery-layout .gallery-container article:hover .location {
+  color: black;
 }
 .gallery-layout .gallery-container article .location {
   color: white;
@@ -32,6 +32,19 @@
   bottom: 0;
   left: 0;
   padding: 25px;
+  z-index: 2;
+  width: 291px;
+}
+.gallery-layout .gallery-container article .location::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0), black);
+  border-radius: 10px;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=gallery.css.map */

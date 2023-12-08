@@ -4,24 +4,24 @@
   position: relative;
 
   .arrow {
-    height: 119.64px;
-    width: 96px;
+    //correction apres soutenance
+    height: 79.2px;
+    width: 46.68px;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     z-index: 1;
     cursor: pointer;
 
     &.next {
       right: 10px;
-      left: 91%;
+      left: 94%;
     }
-
 
     &.prev {
       left: 10px;
     }
   }
+
   @media(max-width: 1000px){
     .arrow{
       width: 24px;
@@ -41,12 +41,9 @@
 
   p {
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     right: 50%;
     z-index: 1;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 5px 10px;
-    border-radius: 5px;
     color: #fff;
   }
 }
